@@ -9,11 +9,13 @@ import "./openzeppelin/utils/Counters.sol";
 contract ColcheteDAOWakaTime is ERC721, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     uint256 public price = 2560000000000000000;
+    address public walletDAO = 0x8BEBdE8931e12c22C9F67663F15C115f40B5621E;
     Counters.Counter private _tokenIdCounter;
 
     constructor() ERC721("Colchete DAO WakaTime", "CDW") {}
     function mint(address to, string memory uri) public payable {
         require(msg.value == price,"CDW: The price of NFT is 2.56 MATIC");
+        payable(walletDAO).transfer(address(this).balance);
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
