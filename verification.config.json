@@ -1,0 +1,21 @@
+[
+  {
+    "contract": "ColcheteDAOWakaTime",
+    "deps": [
+      "contracts/openzeppelin/token/ERC721/ERC721.sol",
+      "contracts/openzeppelin/token/ERC721/extensions/ERC721URIStorage.sol",
+      "contracts/openzeppelin/access/Ownable.sol",
+      "contracts/openzeppelin/utils/Counters.sol",
+      "contracts/ColcheteDAOWakaTime.sol",
+      "contracts/openzeppelin/token/ERC721/IERC721.sol",
+      "contracts/openzeppelin/token/ERC721/IERC721Receiver.sol",
+      "contracts/openzeppelin/token/ERC721/extensions/IERC721Metadata.sol",
+      "contracts/openzeppelin/utils/Address.sol",
+      "contracts/openzeppelin/utils/Context.sol",
+      "contracts/openzeppelin/utils/Strings.sol",
+      "contracts/openzeppelin/utils/introspection/ERC165.sol",
+      "contracts/openzeppelin/utils/introspection/IERC165.sol",
+      "contracts/openzeppelin/utils/math/Math.sol"
+    ]
+  }
+]
