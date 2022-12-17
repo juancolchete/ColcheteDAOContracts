@@ -12,7 +12,6 @@ contract ColcheteDAOWakaTime is ERC721, ERC721URIStorage, Ownable {
     Counters.Counter private _tokenIdCounter;
 
     constructor() ERC721("Colchete DAO WakaTime", "CDW") {}
-ou
     function mint(address to, string memory uri) public payable {
         require(msg.value == price,"CDW: The price of NFT is 2.56 MATIC");
         uint256 tokenId = _tokenIdCounter.current();
