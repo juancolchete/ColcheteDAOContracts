@@ -1,0 +1,15 @@
+# Ignore yarn2 files
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+node_modules
+out
+#hardhat files
+cache
+artifacts
+
+# TypeScript bindings output directory
+typechain-types
