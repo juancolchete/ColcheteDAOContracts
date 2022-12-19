@@ -4,8 +4,8 @@
     "deps": [
       "contracts/openzeppelin/token/ERC721/ERC721.sol",
       "contracts/openzeppelin/token/ERC721/extensions/ERC721URIStorage.sol",
-      "contracts/openzeppelin/access/Ownable.sol",
       "contracts/openzeppelin/utils/Counters.sol",
+      "contracts/openzeppelin/security/ReentrancyGuard.sol",
       "contracts/ColcheteDAOWakaTime.sol",
       "contracts/openzeppelin/token/ERC721/IERC721.sol",
       "contracts/openzeppelin/token/ERC721/IERC721Receiver.sol",
